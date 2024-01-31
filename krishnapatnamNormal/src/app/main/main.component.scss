@@ -1,0 +1,69 @@
+
+.container-fluid {
+    position: relative;
+    text-align: center;
+    color: white;
+  }
+  .centered {
+    position: absolute;
+    top: 42%;
+    right: 3%;
+  }
+  .made{
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    color: white;
+
+  }
+  .we{
+    font-family: Georgia, serif;
+    font-size: 40px;
+    font-weight: bold;
+    color: white;
+  }
+  .right {
+    position: absolute;
+    top: 30%;
+    right: 8%;
+  }
+  
+  .with{
+    font-size: 46px;
+    font-weight: bold;
+    font-family: Georgia, serif;
+    color: #e28508;
+
+  }
+  .delicious{
+    font-family: Georgia, serif;
+    font-size: 65px;
+    font-weight: bold;
+    color: #e28508;
+  }
+  // .banner1{
+  //   height: 580px;
+  // }
+  // .banner2{
+  //   height: 500px;
+  // }
+  .welcome{
+    font-family: "Brush Script MT", cursive;
+  }
+  .welcome-para{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 22px;
+    line-height: 42px;
+  }
+  .foodItem{
+    height: 245px;
+  }
+ .food-item-text{
+    font-size: 22px;
+    margin-top: 12px;
+    color: #87320e;
+  }
+  .order{
+    background-color: #014857;
+    color: white;
+  }

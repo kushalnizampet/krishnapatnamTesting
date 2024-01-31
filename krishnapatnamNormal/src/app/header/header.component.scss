@@ -1,0 +1,30 @@
+.navbar{
+    background-color: #87320e;
+}
+.header-logo{
+    height: 60px;
+}
+.nav-link{
+    display: inline-block;
+    color: #f7c913;
+    text-decoration: none;
+    font-size: 18px;
+    cursor: pointer;
+}
+.nav-link::after {
+    content: '';
+    display: block;
+    width: 0;
+    height: 1.4px;
+    // background: #efcead;
+    // background: #94857B;
+    background:   #FCF6F5;
+    transition: width .3s;
+}
+.nav-link:hover::after {
+    width: 100%;
+    transition: width .3s;
+}
+.ex{
+    flex: 1 1 auto;
+}

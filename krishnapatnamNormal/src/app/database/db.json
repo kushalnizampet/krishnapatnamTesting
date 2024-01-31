@@ -1,0 +1,53 @@
+{
+  "register": [
+    {
+      "name": "kushal",
+      "mobile": 234567890,
+      "username": "kushal",
+      "password": "1",
+      "id": 1
+    },
+    {
+      "name": "kushal",
+      "mobile": 9000235642,
+      "username": "kushal",
+      "password": "1",
+      "id": 2
+    },
+    {
+      "name": "kushal",
+      "mobile": 9000235642,
+      "username": "kushal",
+      "password": "1",
+      "id": 3
+    },
+    {
+      "name": "kushal Nizampet",
+      "mobile": 9000235642,
+      "username": "kushal",
+      "password": "1",
+      "id": 4
+    },
+    {
+      "name": "kushal Nizampet",
+      "mobile": 9000235642,
+      "username": "kushal",
+      "password": "1",
+      "id": 5
+    },
+    {
+      "name": "Deepak Youtuber",
+      "mobile": 1234567890,
+      "username": "deepakYt",
+      "password": "SaiPriya",
+      "id": 6
+    },
+    {
+      "name": "Deepak Youtuber",
+      "mobile": 1234567890,
+      "username": "deepakYt",
+      "password": "SaiPriya",
+      "id": 7
+    }
+  ]
+}

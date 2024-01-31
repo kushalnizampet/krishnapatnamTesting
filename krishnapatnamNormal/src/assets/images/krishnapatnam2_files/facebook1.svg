@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="54" height="54" viewBox="0 0 54 54">
+    <defs>
+        <path id="b" d="M0 20C0 8.954 8.954 0 20 0s20 8.954 20 20-8.954 20-20 20S0 31.046 0 20z"/>
+        <filter id="a" width="155%" height="155%" x="-27.5%" y="-20%" filterUnits="objectBoundingBox">
+            <feMorphology in="SourceAlpha" operator="dilate" radius="2" result="shadowSpreadOuter1"/>
+            <feOffset dy="3" in="shadowSpreadOuter1" result="shadowOffsetOuter1"/>
+            <feGaussianBlur in="shadowOffsetOuter1" result="shadowBlurOuter1" stdDeviation="2.5"/>
+            <feComposite in="shadowBlurOuter1" in2="SourceAlpha" operator="out" result="shadowBlurOuter1"/>
+            <feColorMatrix in="shadowBlurOuter1" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.15 0"/>
+        </filter>
+    </defs>
+    <g fill="none" fill-rule="nonzero">
+        <path fill="#000" d="M7 24C7 12.954 15.954 4 27 4s20 8.954 20 20-8.954 20-20 20S7 35.046 7 24z"/>
+        <g transform="translate(7 4)">
+            <use fill="#000" filter="url(#a)" xlink:href="#b"/>
+            <path fill="#3B5998" fill-rule="evenodd" stroke="#FFF" stroke-width="2" d="M-1 20C-1 8.402 8.402-1 20-1s21 9.402 21 21-9.402 21-21 21-21-9.402-21-21z"/>
+        </g>
+        <path fill="#FFF" d="M28.65 24h2.958L32 20.551h-3.35l.004-1.725c0-.899.092-1.38 1.476-1.38h1.85V14h-2.96c-3.554 0-4.805 1.672-4.805 4.483v2.07H22v3.446h2.216v10h4.433V24z"/>
+    </g>
+</svg>

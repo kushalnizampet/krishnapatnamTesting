@@ -1,0 +1,30 @@
+<div class="container-fluid" style="height: 550px;background-color: #8f320b;">
+    <div class="row">
+     <div class="col-sm-6 mt-2 ms-2">
+         <div class="ms-5 mt-5 text-center" style="border: 1px solid #f7c913;">
+             <h3 class="fs-2 mt-5 mb-5" style="color: #87320e;background-color:  #f7c913;text-align: center;">Login</h3>
+             <!-- <button class="btn btn-warning">login</button> -->
+             <form #form="ngForm" style="margin-left: 120px;">
+
+                 <div class="mb-3">
+                  <input type="email" class="form-control bg-warning" id="exampleFormControlInput1" placeholder="User Name" style="width: 320px;" name="username"  [(ngModel)]="this.loginObj.username" #username="ngModel" required>
+                  <span class="error" *ngIf="username.touched && username.invalid">Enter Correct Credentials</span>
+                </div>
+                <div class="mb-3">  
+                  <input type="email" class="form-control bg-warning" id="exampleFormControlInput1" placeholder="Password" style="width: 320px;" name="password" [(ngModel)]="this.loginObj.password" #password="ngModel" required>
+                  <span class="error" *ngIf="password.touched && password.invalid">Enter Correct Credentials</span>
+
+                </div>
+               <button class="btn btn-warning mb-3 fw-bold" style="margin-right: 100px;" (click)="login()" id="loginBtn">login</button>
+            </form>
+             <p class="m-0 fw-bold">New to App?</p>
+             <a   style="cursor: pointer;" (click)="register()">
+             <p  class="mb-5 text-warning">Create a new account</p>
+             </a>
+         </div>
+     </div>
+         <div class="col-sm-5 text-center">
+             <img src="https://www.indian-travel-places.com/wp-content/uploads/2019/11/krishnapatnam-jubilee-hills-hyderabad.png" alt="krishnapatnam-logo" class="krishnapatnam-image">
+         </div>
+    </div>
+ </div>

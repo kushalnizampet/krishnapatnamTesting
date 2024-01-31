@@ -1,0 +1,39 @@
+<div class="container-fluid" style="background-color: #8f320b;">
+    <div class="row">
+     <div class="col-sm-6 mt-2 ms-2">
+         <div class="ms-5 mt-5 text-center" style="border: 1px solid #f7c913;">
+             <h3 class="fs-2 mt-5 mb-5" style="color: #87320e;background-color:  #f7c913;text-align: center;">Registration</h3>
+             <!-- <button class="btn btn-warning">login</button> -->
+             <form [formGroup]="myform" style="margin-left: 120px;" (ngSubmit)="submitData()">
+                  <div class="mb-3">
+                    <input type="email" class="form-control bg-warning" id="exampleFormControlInput1" placeholder="Name" style="width: 320px;" formControlName="name" required>
+                    <div *ngIf="this.myform.controls['name']?.errors && this.myform.controls['name']?.touched">
+                      <span *ngIf="this.myform.controls['name']?.errors?.['required']" class="errors">Full Name is Required</span>
+                    <span *ngIf="this.myform.controls['name']?.errors?.['maxlength']" class="errors">Only 15 characters are allowed</span>
+                    </div>
+                  </div>                 
+                  <div class="mb-3">
+                    <input type="number" class="form-control bg-warning" id="exampleFormControlInput1" placeholder="Mobile" style="width: 320px;" name="mobile"  formControlName="mobile">
+                  </div>                 
+                  <div class="mb-3">
+                    <input type="email" class="form-control bg-warning" id="exampleFormControlInput1" placeholder="User Name" style="width: 320px;" name="username" formControlName="username">
+                  </div>                 
+                  <div class="mb-3">
+                    <input type="email" class="form-control bg-warning" id="exampleFormControlInput1" placeholder="password" style="width: 320px;" name="password" formControlName="password">
+                    <div *ngIf="this.myform.controls['password']?.errors && this.myform.controls['password']?.touched" class="text-center">
+                      <span *ngIf="this.myform.controls['password']?.errors?.['required']" class="errors">password is required</span>
+                    <span *ngIf="this.myform.controls['password']?.errors?.['maxlength']" class="errors">Only 15 characters are allowed</span>
+                    </div>
+                  </div>
+           <button class="btn btn-warning mb-3 fw-bold"  style="cursor: pointer; " tabindex="0">Submit</button>
+           </form>
+           <a  style="cursor: pointer;text-decoration: none;" routerLink="/">
+            <p  class="mb-5 text-warning" tabindex="0">After Registration click here <span aria-hidden="true" tabindex="0">!!!!!</span></p>
+          </a>
+         </div>
+     </div>
+         <div class="col-sm-5 text-center">
+             <img src="https://www.indian-travel-places.com/wp-content/uploads/2019/11/krishnapatnam-jubilee-hills-hyderabad.png" alt="krishnapatnam-logo" class="krishnapatnam-image">
+            </div>
+    </div>
+ </div>
